@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= link_to 'Back to flats', flats_path, class: "btn btn-danger" %>
+    <%= f.submit class: "btn btn-success float-right" %>
+  <% end %>
+</div>
